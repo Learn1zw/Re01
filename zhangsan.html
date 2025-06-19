@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介网页</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #6e8efb;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #f0f0f0;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80"
+                alt="个人头像" class="profile-img">
+            <h1>张三的个人网站</h1>
+            <p class="subtitle">Web开发者 & 设计师</p>
+        </header>
+
+        <section>
+            <h2>关于我</h2>
+            <p>我是张三，一名充满激情的Web开发者和设计师，拥有5年行业经验。毕业于清华大学计算机科学专业，专注于创造美观且实用的数字体验。</p>
+            <p>我的职业生涯始于一家初创公司，在那里我学会了全栈开发的各个方面。从那时起，我已经为各种客户设计和开发了50多个网站和应用程序，从小型企业到财富500强公司都有合作。</p>
+            <p>我对技术的热爱始于10岁时得到第一台电脑的那一刻。从那时起，我不断探索编程的奥秘，自学了多种编程语言和框架。这种持续学习的热情至今仍然驱动着我不断进步。</p>
+            <p>在工作之外，我喜欢旅行、摄影和品尝美食。这些爱好不仅丰富了我的生活经历，也为我设计工作提供了许多灵感。我相信生活中的美好体验能够转化为创造力的源泉。</p>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="团队工作">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="项目讨论">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="代码编写">
+                <img src="https://images.unsplash.com/photo-1506784384426-b6e4ef6a3b37?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="户外旅行">
+                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="摄影作品">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="阅读学习">
+            </div>
+        </section>
+
+        <section>
+            <h2>专业技能</h2>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Vue.js</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Express</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Git</span>
+                <span class="skill">Docker</span>
+                <span class="skill">AWS</span>
+                <span class="skill">UI/UX设计</span>
+                <span class="skill">Photoshop</span>
+                <span class="skill">Figma</span>
+            </div>
+
+            <p>我的技术栈涵盖了前端和后端开发的全流程。在前端方面，我精通现代JavaScript框架如React和Vue.js，能够创建响应迅速、交互丰富的用户界面。</p>
+            <p>后端开发方面，我有丰富的Node.js和Express经验，能够构建RESTful API和全栈应用。数据库方面，我熟悉关系型和非关系型数据库的设计和优化。</p>
+            <p>作为全栈开发者，我特别注重性能优化和用户体验。我深入研究过Web性能优化的各种技术，包括代码分割、懒加载、缓存策略和服务端渲染等。</p>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="编程环境">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="代码示例">
+                <img src="https://images.unsplash.com/photo-1555774698-0f76b3f1f727?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="团队协作">
+            </div>
+        </section>
+
+        <section>
+            <h2>工作经验</h2>
+            <h3>高级Web开发者 - 科技公司 (2018-至今)</h3>
+            <p>作为核心开发团队成员，负责设计和实现多个大型Web应用。带领5人前端团队，采用React和Redux架构，提高应用性能40%。与产品经理和设计师紧密合作，确保用户体验一致性。</p>
+
+            <h3>前端开发者 - 数字营销机构 (2016-2018)</h3>
+            <p>开发了20多个响应式网站，使用HTML5、CSS3和JavaScript。优化网站性能，平均加载时间减少30%。实施SEO最佳实践，提高客户网站在搜索结果中的排名。</p>
+
+            <h3>自由职业者 (2014-2016)</h3>
+            <p>为各种客户提供Web开发和设计服务。项目包括企业网站、电子商务平台和个人博客。管理项目全生命周期，从需求分析到部署和维护。</p>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="团队合影">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="办公环境">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="项目展示">
+            </div>
+        </section>
+
+        <section>
+            <h2>教育背景</h2>
+            <h3>清华大学 - 计算机科学学士 (2010-2014)</h3>
+            <p>主修计算机科学，辅修数字媒体艺术。在校期间参与多个软件开发项目，获得校级科技创新奖。担任计算机协会主席，组织编程比赛和技术讲座。</p>
+
+            <h3>在线课程与认证</h3>
+            <p>持续通过在线平台学习新技术，完成了30多个专业课程，包括: </p>
+            <ul>
+                <li>高级React开发 - Udemy</li>
+                <li>Node.js全栈开发 - Coursera</li>
+                <li>UX设计原理 - edX</li>
+                <li>AWS云计算架构 - 官方认证</li>
+            </ul>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="校园生活">
+                <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b848d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="毕业典礼">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="在线学习">
+            </div>
+        </section>
+
+        <section>
+            <h2>项目展示</h2>
+            <h3>电子商务平台 (2020)</h3>
+            <p>采用MERN堆栈(MongoDB, Express, React,
+                Node.js)构建的全功能电商网站。实现了用户认证、产品分类、购物车、支付集成和订单管理等功能。优化后页面加载速度提高50%，转化率提升35%。</p>
+
+            <h3>企业资源规划系统 (2019)</h3>
+            <p>为制造业客户定制的ERP系统，整合了库存管理、采购订单和生产计划模块。使用Vue.js前端和Node.js后端，系统上线后客户运营效率提高40%。</p>
+
+            <h3>健康跟踪应用 (2018)</h3>
+            <p>React Native开发的移动应用，帮助用户记录饮食、运动和睡眠数据。与REST API集成，提供数据可视化和个性化建议。应用发布后6个月内下载量超过10万次。</p>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed50376e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="电商项目">
+                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="ERP系统">
+                <img src="https://images.unsplash.com/photo-1556740734-10f59f2a1e9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="健康应用">
+                <img src="https://images.unsplash.com/photo-1556740735-3e3f5d3f5d3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="项目演示">
+                <img src="https://images.unsplash.com/photo-1556740736-6a3f5d3f5d3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="用户反馈">
+                <img src="https://images.unsplash.com/photo-1556740737-6a3f5d3f5d3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="数据分析">
+            </div>
+        </section>
+
+        <section>
+            <h2>兴趣爱好</h2>
+            <p>编程之外，我有很多兴趣爱好，它们丰富了我的生活，也常常给我带来工作上的灵感。</p>
+
+            <h3>摄影</h3>
+            <p>从大学开始接触摄影，喜欢捕捉生活中的美好瞬间。特别擅长街头摄影和风景摄影。摄影训练了我的观察力和审美能力，这对UI设计有很大帮助。</p>
+
+            <h3>旅行</h3>
+            <p>去过15个国家，体验不同文化。旅行让我学会了适应新环境和解决问题的灵活思维，这对处理编程中的挑战很有帮助。</p>
+
+            <h3>阅读</h3>
+            <p>平均每月阅读3-4本书，范围涵盖技术、设计、心理学和科幻小说。持续学习是我保持创造力和技术前沿的关键。</p>
+
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="摄影作品1">
+                <img src="https://images.unsplash.com/photo-1498855926480-d98e83099315?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="旅行照片">
+                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="阅读时光">
+                <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="摄影作品2">
+                <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="户外活动">
+                <img src="https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt="创意工作">
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2023 张三的个人网站. 保留所有权利.</p>
+            <p>联系方式: email@example.com | +86 123 4567 8910</p>
+        </footer>
+    </div>
+</body>
+
+</html>
